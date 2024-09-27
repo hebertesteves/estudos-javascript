@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="meuDiv"> Alterar o texto </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repudiandae distinctio commodi incidunt in, ad cum dolores a fuga? Assumenda minima doloribus optio. Veritatis est et animi eaque incidunt quaerat.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ad consectetur ipsam, dignissimos fugit doloremque dolores sunt maiores officia velit modi nisi est alias beatae placeat eaque sint assumenda reprehenderit.
+    </p>
+
+    <div class="minhaClasse">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur tempore eos vel corrupti, rerum quidem similique excepturi eum neque. Ipsum tempore labore fugit, deserunt corrupti nulla nostrum quasi perspiciatis ut.
+    </div>
+
+    <div class="minhaClasse">
+        Hebert e lindo
+    </div>
+    
+
+    <script>
+        var alterarDiv = document.getElementById('meuDiv')
+        alterarDiv.innerText = "Texto Alterado"
+
+        var alterarP1 = document.getElementsByTagName('p')[0]
+        alterarP1.innerText = "Alterei denovo hehe"
+        var alterarP2 = document.getElementsByTagName('p')[1]
+        alterarP2.innerText = "Ops..."
+
+        const alterarClass = document.getElementsByClassName('minhaClasse');
+        alterarClass.innerText = "Hebert e bonitao"
+    </script>
+
+    
+</body>
+</html>

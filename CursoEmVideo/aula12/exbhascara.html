@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios da Lista de Estrutura Condicional</title>
+</head>
+<body>
+ 
+    
+<h1> Formula de Bhaskara </h1>   
+
+Coeficiente a: <input type="number" name="txta" id="txta"> <br> <br>
+Coeficiente b: <input type="number" name="txtb" id="txtb"> <br> <br>
+Coeficiente c: <input type="number" name="txtc" id="txtc"> <br> <br>
+<input type="button" value="Calcular" onclick="Calcular()"> <br> <br>
+<div id="res"> Resultado</div>
+
+<script>
+    // Problema "notas"
+    // Fazer um programa para ler as duas notas que um aluno obteve no primeiro e segundo semestres de
+    // uma disciplina anual. Em seguida, mostrar a nota final que o aluno obteve (com uma casa decimal) no
+    // ano juntamente com um texto explicativo. Caso a nota final do aluno seja inferior a 60.00, mostrar a
+    // mensagem "REPROVADO", conforme exemplos. 
+    // var n1 = Number(window.prompt('Digite a primeira nota: '))
+    // var n2 = Number(window.prompt('Digite a segunda nota: '))
+    // var notaF = n1 + n2 
+    // console.log(`NOTA FINAL = ${notaF.toFixed(1)}`)
+    // if (notaF < 60.00) {
+    //     console.log('REPROVADO')
+    // }
+    function Calcular() {
+        var txtA = window.document.getElementById('txta')
+        var txtB = window.document.getElementById('txtb')
+        var txtC = window.document.getElementById('txtc')
+        var res = window.document.getElementById('res')
+        var a = Number(txtA.value)
+        var b = Number(txtB.value)
+        var c = Number(txtC.value)
+        var delta = Math.sqrt(b ** 2 - 4 * a * c)
+        if (delta < 0) {
+            res.innerHTML = "Esta equação não possui raiz real"
+        } else {
+            var x1 = (-b + delta) / 2 * a
+            var x2 = (-b - delta) / 2 * a
+            res.innerHTML = `X1 = ${x1.toFixed(4)} <br>`
+            res.innerHTML += `X2 = ${x2.toFixed(4)}`
+        }
+    }
+    
+    // var a = Number(window.prompt('Coeficiente a: '))
+    // var b = Number(window.prompt('Coeficiente b: '))
+    // var c = Number(window.prompt('Coeficiente c: '))
+    // var delta = Math.sqrt(b ** 2 - 4 * a * c)
+    // if (delta < 0) {
+    //     console.log("Esta equação não possui raiz real")
+    // } else {
+    //     var x1 = (-b + delta) / 2 * a
+    //     var x2 = (-b - delta) / 2 * a
+    //     console.log(`X1 = ${x1.toFixed(4)}`)
+    //     console.log(`X2 = ${x2.toFixed(4)}`)
+    // }
+    
+</script>    
+</body>
+</html>
