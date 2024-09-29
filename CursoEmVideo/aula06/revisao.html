@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        // window.confirm('Está tudo bem??')
+        var nome = window.prompt('Qual é o seu nome??')
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var salario = Number(window.prompt('Digite seu salario: '))
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual ${soma}`)
+        window.alert(`O seu salario é ${salario.toFixed(2)}`)
+        // window.alert(`O seu nome é ${nome}, seja bem vindo!`)
+
+        
+        document.write(`Olá ${nome}, seja muito bem vindo a Revisão!!! <br>`)
+        document.write(`O seu nome escrito tudo em maisculo fica ${nome.toUpperCase()} <br>`)
+        document.write(`O seu nome escrito tudo em minusculo fica ${nome.toLowerCase()} <br>`)
+        document.write(`O seu nome tem ${nome.length} letras`)
+        document.write(`${nome} o seu salario em Reais é ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    </script>    
+</body>
+</html>

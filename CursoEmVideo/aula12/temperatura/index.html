@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+<header>
+    <h1> Conversão de Temperatura </h1>
+</header>   
+
+<section>
+    <div>
+        <p> Voce vai digitar a temperatura em qual escala? </p>
+        <input type="radio" name="radtemp" id="cel" checked>
+        <label for="cel">  Celsius</label>
+        <input type="radio" name="radtemp" id="fah">
+        <label for="fah"> Fahrenheit </label>
+
+        <p>Digite a temperatura: </p>
+        <input type="number" name="txttemp" id="txttemp">
+
+        <input type="button" value="Converter" onclick="converter()">
+    </div>
+    <div id="res">
+        Resultado
+    </div>
+</section>
+
+<footer>
+    <p>&copy; HebertEsteves </p>
+</footer>
+
+<script src="script.js"> </script>
+</body>
+</html>

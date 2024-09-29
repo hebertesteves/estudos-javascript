@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+    // Problema "crescente" (adaptado de URI 1113)  
+    // Leia uma quantidade indeterminada de duplas de valores inteiros X e Y. Escreva para cada X e Y uma 
+    // mensagem que indique se estes valores foram digitados em ordem crescente ou decrescente. O 
+    // programa deve finalizar quando forem digitados dois valores iguais.
+    // var x = Number(window.prompt('Digite dois numeros: '))
+    // var y = Number(window.prompt(''))
+    // while (x != y) {
+    //     if (x > y) {
+    //         alert('DECRESCENTE! ')
+    //     } else if (x < y) {
+    //     alert('CRESCENTE! ')
+    //     }
+    // x = Number(window.prompt('Digite dois numeros: '))
+    // y = Number(prompt(''))
+    // }
+    
+
+    // Problema "media_idades"  
+    // Faça um programa para ler um número indeterminado de dados, contendo cada um, a idade de um 
+    // indivíduo. O último dado, que não entrará nos cálculos, contém um valor de idade negativa. Calcular 
+    // e imprimir a idade média deste grupo de indivíduos. Se for entrado um valor negativo na primeira vez, 
+    // mostrar a mensagem "IMPOSSIVEL CALCULAR".
+    // var idade = Number(window.prompt('Digite as idades: '))
+    // var soma = 0
+    // var cont = 0
+    // var media
+    // if (idade < 0) {
+    //     window.alert('IMPOSSIVEL CALCULAR')
+    // } else {
+    //     while (idade > 0) {
+    //     soma = soma + idade
+    //     cont++
+    //     idade = Number(window.prompt(''))
+    // }
+    //     media = soma / cont
+    //     alert(`MEDIA = ${media.toFixed(2)}`)
+    // }
+
+    // Problema "senha_fixa" (adaptado de URI 1114) 
+    // Escreva um programa que repita a leitura de uma senha até que ela seja válida. Para cada leitura de 
+    // senha incorreta informada, escrever a mensagem "Senha Invalida! Tente novamente:". Quando a senha 
+    // for informada corretamente deve ser impressa a mensagem "Acesso Permitido" e o algoritmo 
+    // encerrado. Considere que a senha correta é o valor 2002.
+    // var senha = Number(prompt('Digite a senha: '))
+    // while (senha != 2002) {
+    //     senha = Number(prompt('Senha Invalida! Tente novamente: '))
+    // }
+    // alert('Acesso permitido! ')
+
+         
+    // Problema "quadrante" (adaptado de URI 1115) 
+    // Escreva um programa para ler as coordenadas (X,Y) de uma quantidade indeterminada de pontos no 
+    // sistema cartesiano. Para cada ponto escrever o quadrante a que ele pertence (Q1, Q2, Q3 ou Q4). O 
+    // algoritmo será encerrado quando pelo menos uma de duas coordenadas for NULA (nesta situação sem 
+    // escrever mensagem alguma).
+    // var x = Number(prompt('Digite os valores das coordenadas X: '))
+    // var y = Number(prompt('Digite os valores das coordenadas Y:'))
+    // var quadrante = ''
+    // while (x != 0 && y != 0) {
+    //     if (x > 0 && y > 0) {
+    //         quadrante = 'Q1'
+    //     } else if (x < 0 && y > 0) {
+    //         quadrante = 'Q2'
+    //     } else if (x < 0 && y < 0) {
+    //         quadrante =  'Q3'
+    //     } else if (x > 0 && y < 0) {
+    //         quadrante = 'Q4'
+    //     }
+    //     alert(`QUADRANTE ${quadrante}`)
+        
+    //     x = Number(prompt('Digite os valores das coordenadas X: '))
+    //     y = Number(prompt('Digite os valores das coordenadas Y:'))
+    // }
+    
+     
+    // Problema "validacao_de_nota" (adaptado de URI 1117) 
+    // Faça um programa que leia as notas referentes às duas avaliações de um aluno. Calcule e imprima a 
+    // média semestral. Faça com que o algoritmo só aceite notas válidas (uma nota válida deve pertencer ao 
+    // intervalo [0,10]). Cada nota deve ser validada separadamente. 
+    // var nota1 = Number(prompt('Digite a primeira nota: '))
+    // while (nota1 < 0 || nota1 > 10) {
+    //     nota1 = Number(prompt('Valor invalido! Tente novamente: '))
+    // }
+    // var nota2 = Number(prompt('Digite a segunda nota: '))
+    // while (nota2 < 0 || nota2 > 10) {
+    //     nota2 = Number(prompt('Valor invalido! Tente novamente: '))
+    // }
+    // var media = (nota1 + nota2) / 2
+    // alert(`MEDIA = ${media.toFixed(2)}`)
+
+    // Problema "combustivel" (adaptado de URI 1134) 
+    // Um posto de combustíveis deseja determinar qual de seus produtos tem a preferência de seus clientes. 
+    // Escreva um algoritmo para ler o tipo de combustível abastecido (codificado da seguinte forma: 
+    // 1.Álcool 2.Gasolina 3.Diesel 4.Fim). Caso o usuário informe um código inválido (fora da faixa de 1 a 
+    // 4) deve ser solicitado um novo código (até que seja válido). O programa será encerrado quando o 
+    // código informado for o número 4, devendo então mostrar a mensagem "MUITO OBRIGADO", bem 
+    // como as quantidades de cada combustível.
+    // var codigo = Number(prompt('Informe um codigo (1, 2, 3) ou 4 para parar: '))
+    // var alcool = 0
+    // var gasolina = 0
+    // var diesel = 0
+    // while (codigo != 4) {
+    //     if (codigo == 1) {
+    //         alcool++
+    //     } else if (codigo == 2) {
+    //         gasolina++
+    //     } else if (codigo == 3) {
+    //         diesel++
+    //     }
+
+    //     codigo = Number(prompt('Informe um codigo (1, 2, 3) ou 4 para parar: '))
+    // }
+    
+    // console.log('MUITO OBRIGADO ')
+    // console.log(`Alcool: ${alcool}`)
+    // console.log(`Gasolina: ${gasolina}`)
+    // console.log(`Diesel: ${diesel}`)
+
+    // Problema "pares_consecutivos" (adaptado de URI 1159) 
+    // O programa deve ler um valor inteiro X indefinidas vezes. (O programa irá parar quando o valor de X 
+    // for igual a 0). Para cada X lido, imprima a soma dos 5 pares consecutivos a partir de X, inclusive o X 
+    // , se for par. Se o valor de entrada for 4, por exemplo, a saída deve ser 40, que é o resultado da operação: 
+    // 4+6+8+10+12, enquanto que se o valor de entrada for 11, por exempo, a saída deve ser 80, que é a 
+    // soma de 12+14+16+18+20.
+    // var x = Number(prompt('Digite um numero inteiro: '))
+    // var soma = 0
+    // while (x != 0) {
+    //     if (x % 2 == 0) {
+    //         soma = x + x + 2 + x + 4 + x + 6 + x + 8
+    //     } else {
+    //         x = x + 1
+    //         soma = x + x + 2 + x + 4 + x + 6 + x + 8
+    //     }
+    //     alert(`SOMA = ${soma}`)
+    //     x = Number(prompt('Digite um numero inteiro: '))
+    // }
+
+    //PARTE 2: estrutura para 
+
+     
+    // Problema "tabuada"   
+    // Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10, conforme exemplo. 
+    // var n = Number(prompt('Deseja a tabuada para qual valor? '))
+    // for (var i = 1;  i<=10; i++) {
+    //     console.log(`${n} x ${i} = ${n * i}`)
+    // }
+
+     
+    // Problema "soma_impares" (adaptado de URI 1071) 
+    // Leia 2 valores inteiros X e Y (em qualquer ordem). A seguir, calcule e mostre a soma dos números 
+    // impares entre eles.
+    // var n1 = Number(prompt('Digite dois numeros: '))
+    // var n2 = Number(prompt(''))
+    // var soma = 0
+    // var menor
+    // if (n1 > n2) {
+    //     menor = n2
+    //     n2 = n1
+    //     n1 = menor
+    // }
+    // for (var i = n1 + 1; i <= n2 - 1; i++) {
+    //     if (i % 2 != 0) {
+    //         soma = soma + i
+    //     }
+    // }
+    // alert(`SOMA DOS IMPARES = ${soma}`)
+
+     
+    // Problema "sequencia_impares" (adaptado de URI 1067) 
+    // Leia um valor inteiro X. Em seguida mostre os ímpares de 1 até X, um valor por linha, inclusive o X, 
+    // se for o caso. 
+    // var x = Number(prompt('Digite o valor de X: '))
+    // for (var i = 1; i <= x; i++) {
+    //     if (i % 2 != 0) {
+    //         console.log(i)
+    //     }
+    // }
+
+    // Problema "dentro_fora" (adaptado de URI 1072) 
+    // Leia um valor inteiro N. Este valor será a quantidade de valores inteiros X que serão lidos em seguida. 
+    // Mostre quantos destes valores X estão dentro do intervalo [10,20] e quantos estão fora do intervalo, 
+    // conforme exemplo
+    // var n = Number(prompt('Quantos numeros voce vai digitar? '))
+    // var x
+    // var dentro = 0
+    // var fora = 0
+    // for (var i = 1; i <= n; i++) {
+    //     x = Number(prompt('Digite um numero: '))
+    //     if (x >= 10 && x <= 20) {
+    //         dentro++
+    //     } else {
+    //         fora++
+    //     }
+
+    // }
+    // console.log(`${dentro} DENTRO`)
+    // console.log(`${fora} FORA`)
+
+     
+    // Problema "par_impar" (adaptado de URI 1074) 
+    // Leia um valor inteiro N. Este valor será a quantidade de números inteiros que serão lidos em seguida. 
+    // Para cada valor lido, mostre uma mensagem dizendo se este valor lido é PAR ou IMPAR, e também 
+    // se é POSITIVO ou NEGATIVO. No caso do valor ser igual a zero (0), seu programa deverá imprimir 
+    // apenas NULO.
+    // var n = Number(prompt('Quantos numeros voce vai digitar? '))
+    // for (var i = 0; i < n; i++) {
+    //     y = Number(prompt('Digite um numero: '))
+    //     if (y == 0) {
+    //         console.log(`NULO`)
+
+    //     } else if (y % 2 == 0) {
+    //         if (y > 0) {
+    //             //Par positivo
+    //             console.log(`PAR POSITIVO`)
+    //         } else {
+    //             //Par negativo
+    //             console.log(`PAR NEGATIVO`)
+    //         }
+
+    //     } else if (y % 2 != 0) {
+    //         if (y > 0) {
+    //             //Impar positivo
+    //             console.log(`IMPAR POSITIVO`)
+    //         } else {
+    //             //Impar negativo
+    //             console.log(`IMPAR NEGATIVO`)
+    //         }
+    //     } 
+
+        
+    // }
+
+     
+    // Problema "media_ponderada" (adaptado de URI 1079) 
+    // Leia um valor inteiro N, que representa o número de casos de teste que vem a seguir. Cada caso de 
+    // teste consiste de 3 valores reais, para os quais você deverá calcular e mostrar a média ponderada, sendo 
+    // que o primeiro valor tem peso 2, o segundo valor tem peso 3 e o terceiro valor tem peso 5. Vale lembrar 
+    // que a média ponderada é a soma de todos os valores multiplicados pelo seu respectivo peso, dividida 
+    // pela soma dos pesos.
+
+    // var n = Number(prompt('Quantos casos voce vai digitar? '))
+    // var n1, n2, n3, mediaP
+    
+    
+    // for (var i = 1; i <= n; i++) {
+    //     n1 = Number(prompt('Digite o primeiro numero: '))
+    //     n2 = Number(prompt('Digite o segundo numero: '))
+    //     n3 = Number(prompt('Digite o terceiro numero: '))
+    //     mediaP = (n1 * 2 + n2 * 3 + n3 * 5) / 10
+    //     console.log(`MEDIA = ${mediaP.toFixed(1)}`)
+    // }
+
+     
+    // Problema "divisao" (adaptado de URI 1116) 
+    // Escreva um algoritmo que leia dois números e imprima o resultado da divisão do primeiro pelo 
+    // segundo. Caso não for possível, mostre a mensagem “DIVISAO IMPOSSIVEL”. 
+    // var n = Number(prompt('Quantos casos voce vai digitar? '))
+    // var numerador, denominador, divisao
+    // for (var i = 1; i <= n; i++) {
+    //     numerador = Number(prompt('Entre com o numerador: '))
+    //     denominador = Number(prompt('Entre com o denominador: '))
+    //     if (denominador == 0) {
+    //         alert(`DIVISAO IMPOSSIVEL`)
+    //     } else {
+    //         divisao = numerador / denominador
+    //         alert(`DIVISAO = ${divisao.toFixed(2)}`)
+    //     }
+        
+    // }
+
+     
+    // Problema "fatorial" (adaptado de URI 1153) 
+    // Fazer um programa para ler um número natural N (valor máximo: 15), e depois calcular e mostrar o 
+    // fatorial de N. 
+    // var n = Number(prompt('Digite o valor de N: '))
+    // var fatorial
+    // if (n == 0) {
+    //     fatorial = 0
+    // } else {
+    // fatorial = 1
+    // for (var i = n; i >= 1; i--) {
+    //     fatorial = i * fatorial
+    // }
+    // }
+    // alert(`FATORIAL = ${fatorial}`)
+
+    var casos = Number(prompt('Quantos casos de teste serao digitados? '))
+    var qndCobaia, tipoCobaia
+    var coelho = 0
+    var rato = 0
+    var sapo = 0
+    for (var i = 1; i <= casos; i++) {
+        qndCobaia = Number(prompt('Quantidade de cobaias: '))
+        tipoCobaia = prompt('Tipo de cobaia: ')
+        if (tipoCobaia == 'C') {
+            coelho = qndCobaia + coelho
+        } else if (tipoCobaia == 'R') {
+            rato = qndCobaia + rato
+        } else if (tipoCobaia == 'S') {
+            sapo = qndCobaia + sapo
+        }
+    }
+
+    // Problema "experiencias" (adaptado de URI 1094) 
+    // Maria acabou de iniciar seu curso de graduação na faculdade de medicina e precisa de sua ajuda para 
+    // organizar os experimentos de um laboratório o qual ela é responsável. Ela quer saber no final do ano, 
+    // quantas cobaias foram utilizadas no laboratório e o percentual de cada tipo de cobaia utilizada. Este 
+    // laboratório em especial utiliza três tipos de cobaias: sapos, ratos e coelhos. Para obter estas 
+    // informações, ela sabe exatamente o número de experimentos que foram realizados, o tipo de cobaia 
+    // utilizada e a quantidade de cobaias utilizadas em cada experimento. Faça um programa que leia um 
+    // valor inteiro N que indica os vários casos de teste que vem a seguir. Cada caso de teste contém um 
+    // inteiro que representa a quantidade de cobaias utilizadas e uma letra ('C', 'R' ou 'S'), indicando o tipo 
+    // de cobaia (R:Rato S:Sapo C:Coelho). Apresente o total de cobaias utilizadas, o total de cada tipo de 
+    // cobaia utilizada e o percentual de cada uma em relação ao total de cobaias utilizadas, sendo que o 
+    // percentual deve ser apresentado com dois dígitos após o ponto.
+    // var totalCobaia = sapo + coelho + rato
+    // var porCoelho = (coelho / totalCobaia ) * 100
+    // var porRato = (rato / totalCobaia ) * 100
+    // var porSapo = (sapo / totalCobaia ) * 100
+    // console.log(`RELATORIO FINAL: `)
+    // console.log(`Total: ${totalCobaia} cobaias `)
+    // console.log(`Total de coelhos: ${coelho}`)
+    // console.log(`Total de ratos: ${rato}`)
+    // console.log(`Total de sapos: ${sapo}`)
+    // console.log(`Percentual de coelhos: ${porCoelho.toFixed(2)}`)
+    // console.log(`Percentual de ratos: ${porRato.toFixed(2)}`)
+    // console.log(`Percentual de sapos: ${porSapo.toFixed(2)}`)
+    
+</script>   
+  
+</body>
+</html>
