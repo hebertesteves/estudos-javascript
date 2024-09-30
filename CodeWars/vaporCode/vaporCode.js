@@ -1,0 +1,1 @@
+const vaporcode = string => string.toUpperCase().split(' ').reduce((x, cont) => x + cont, "").split('').join('  ');
