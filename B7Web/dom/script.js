@@ -53,6 +53,24 @@ function clicou() {
     }
     input.setAttribute('placeholder', 'Placeholder alterado');
 
+
+    const li = document.querySelector('li');
+
+    li.style.backgroundColor = '#00F';
+    li.style.fontSize = '30px';
+
+    li.classList.add('azul');
+    li.classList.remove('azul');
+    li.classList.toggle('azul');
+
+    
+
+    
+    
+}
+
+function mostrarSenha() {
+    const input = document.querySelector('input');
     const botao = document.querySelector('.botao');
     if (input.getAttribute('type') == 'text') {
         input.setAttribute('type', 'password');
@@ -62,8 +80,5 @@ function clicou() {
         botao.innerHTML = 'Esconder senha';
 
     }
-    
-    
-    
 }
 
